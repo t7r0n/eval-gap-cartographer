@@ -1,0 +1,37 @@
+{
+  "project": "Eval Coverage Compiler",
+  "criteria": [
+    {
+      "criterion_id": "crit_01",
+      "text": "Typed fixtures for scenarios, tools, personas, risk tiers, and outcomes.",
+      "requires_evidence": true
+    },
+    {
+      "criterion_id": "crit_02",
+      "text": "Coverage analysis across journey, persona, tool, and edge-case dimensions.",
+      "requires_evidence": true
+    },
+    {
+      "criterion_id": "crit_03",
+      "text": "Offline dashboard and evidence graph for audit-friendly evaluation planning.",
+      "requires_evidence": true
+    },
+    {
+      "criterion_id": "crit_04",
+      "text": "Offline dashboard generated as a static HTML artifact.",
+      "requires_evidence": true
+    },
+    {
+      "criterion_id": "crit_05",
+      "text": "Evidence verifier rejects unsupported or unknown claims.",
+      "requires_evidence": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "control_id": "unsupported_claim",
+      "text": "CLAIM: this impressive claim has no evidence marker",
+      "should_fail_verification": true
+    }
+  ]
+}

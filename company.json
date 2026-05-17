@@ -1,0 +1,25 @@
+{
+  "slug": "coval-eval-coverage-compiler",
+  "company": "Eval Coverage Compiler",
+  "title": "Eval Coverage Compiler",
+  "thesis": "A local evaluation coverage workbench that turns synthetic agent-test records into coverage gaps, risk-ranked recommendations, and verifiable reports.",
+  "dataset": [
+    "Synthetic local fixtures generated deterministically from a seed.",
+    "Typed records stored in a local DuckDB database.",
+    "Evidence identifiers preserved from ingestion through report generation.",
+    "No external services, credentials, or production data are required."
+  ],
+  "build": [
+    "Typed fixtures for scenarios, tools, personas, risk tiers, and outcomes.",
+    "Coverage analysis across journey, persona, tool, and edge-case dimensions.",
+    "Offline dashboard and evidence graph for audit-friendly evaluation planning.",
+    "Offline dashboard generated as a static HTML artifact.",
+    "Evidence verifier rejects unsupported or unknown claims."
+  ],
+  "tests": [
+    "Unit tests cover the end-to-end local workflow.",
+    "Verifier tests cover unsupported and unknown evidence references.",
+    "Dashboard escaping tests cover fixture text rendered into HTML.",
+    "Benchmark: record count, runtime, artifact count, and verification status are recorded."
+  ]
+}
