@@ -2,13 +2,19 @@
 
 A local evaluation coverage workbench that turns synthetic agent-test records into coverage gaps, risk-ranked recommendations, and verifiable reports.
 
-## Features
+`coval-eval-coverage-compiler` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
+
+## Failure model
+
+Eval Coverage Compiler: Missing Scenario Detection for Agent Teams.
+
+## Measurement loop
 
 - Typed fixtures for scenarios, tools, personas, risk tiers, and outcomes.
 - Coverage analysis across journey, persona, tool, and edge-case dimensions.
 - Offline dashboard and evidence graph for audit-friendly evaluation planning.
 
-## Run Locally
+## Commands
 
 ```bash
 uv sync
@@ -32,6 +38,14 @@ uv run ruff check .
 - `outputs/benchmark.md`
 - `outputs/demo_pack.md`
 
-## Data Policy
+## Test path
 
-This project runs fully locally on deterministic synthetic fixtures. It does not require external APIs, credentials, private datasets, network access, or production systems.
+```bash
+uv run ruff check .
+uv run pytest -q
+uv run app verify
+```
+
+## Local-only contract
+
+Every example in `coval-eval-coverage-compiler` is fabricated for repeatability. Generated outputs are rebuildable artifacts, not source material.
