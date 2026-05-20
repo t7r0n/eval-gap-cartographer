@@ -71,7 +71,7 @@ wheels = [
 ]
 
 [[package]]
-name = "eval-gap-cartographer"
+name = "eval-coverage-compiler"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

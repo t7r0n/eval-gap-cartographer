@@ -19,7 +19,7 @@ PRIMARY_METRIC = 'coverage_score'
 PRIMARY_LABEL = 'Coverage'
 CHECKS = ['untested refund escalation path', 'missing persona diversity', 'release diff creates new eval', 'unsupported scenario blocked']
 CASES = [['refund escalation', 'add_missing_simulation', 'persona=angry_customer; tool=refund_tool; metric=escalation_metric', False, 94, 'release_diff', 'missing high-risk refund escalation simulation'], ['billing correction', 'covered_review', 'persona=non_native_speaker; tool=billing_tool; metric=resolution_metric', True, 35, 'docs', 'covered but needs persona expansion'], ['account closure', 'add_missing_simulation', 'persona=elderly_user; tool=identity_tool; metric=safety_metric', False, 88, 'production_trace', 'identity flow lacks edge-case simulation'], ['order status', 'covered_review', 'persona=standard_user; tool=order_tool; metric=latency_metric', True, 18, 'eval_suite', 'adequately covered baseline path'], ['policy exception', 'add_missing_simulation', 'persona=agent_handoff; tool=policy_tool; metric=compliance_metric', False, 91, 'release_diff', 'new policy tool has no regression eval']]
-SLUG = 'eval-gap-cartographer'
+SLUG = 'eval-coverage-compiler'
 
 
 class DomainCase(BaseModel):
