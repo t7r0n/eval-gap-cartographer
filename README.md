@@ -1,5 +1,6 @@
 # Eval Coverage Compiler
 
+![Eval Coverage Compiler working preview](outputs/project_working.svg)
 A local evaluation coverage workbench that turns synthetic agent-test records into coverage gaps, risk-ranked recommendations, and verifiable reports.
 
 `coval-eval-coverage-compiler` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
@@ -49,3 +50,5 @@ uv run app verify
 ## Local-only contract
 
 Every example in `coval-eval-coverage-compiler` is fabricated for repeatability. Generated outputs are rebuildable artifacts, not source material.
+
+![Eval Coverage Compiler evidence map](outputs/evidence_map.svg)
