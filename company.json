@@ -1,5 +1,5 @@
 {
-  "slug": "coval-eval-coverage-compiler",
+  "slug": "eval-gap-cartographer",
   "company": "Eval Coverage Compiler",
   "title": "Eval Coverage Compiler",
   "thesis": "A local evaluation coverage workbench that turns synthetic agent-test records into coverage gaps, risk-ranked recommendations, and verifiable reports.",

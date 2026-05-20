@@ -1,5 +1,5 @@
 [project]
-name = "coval-eval-coverage-compiler"
+name = "eval-gap-cartographer"
 version = "0.1.0"
 description = "Eval Coverage Compiler: Missing Scenario Detection for Agent Teams"
 requires-python = ">=3.12"
